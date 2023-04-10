@@ -1,0 +1,14 @@
+# devtiro:
+#   kafka:
+#     topic: books.published
+
+spring:
+#   kafka:
+#     bootstrap-servers: broker:9092
+  jpa:
+    database-platform: "org.hibernate.dialect.H2Dialect"
+  datasource:
+    driver-class-name: "org.h2.Driver"
+    url: "jdbc:h2:mem:testdb;MODE=PostgreSQL;DATABASE_TO_LOWER=TRUE;DEFAULT_NULL_ORDERING=HIGH"
+    username: "sa"
+    password: "password"
