@@ -1,0 +1,30 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+update-author-persistence:
+  - package-ecosystem: "maven" # See documentation for possible values
+    directory: "/author-persistence" # Location of package manifests
+    schedule:
+      interval: "weekly"
+
+update-book-persistence:
+- package-ecosystem: "maven" # See documentation for possible values
+  directory: "/book-persistence" # Location of package manifests
+  schedule:
+    interval: "weekly"
+
+update-book-publisher:
+- package-ecosystem: "maven" # See documentation for possible values
+  directory: "/book-publisher" # Location of package manifests
+  schedule:
+    interval: "weekly"
+
+update-notifications:
+- package-ecosystem: "maven" # See documentation for possible values
+  directory: "/notifications" # Location of package manifests
+  schedule:
+    interval: "weekly"    
+    
