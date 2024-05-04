@@ -4,27 +4,20 @@
 # https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
 
 version: 2
-update-author-persistence:
-  - package-ecosystem: "maven" # See documentation for possible values
-    directory: "/author-persistence" # Location of package manifests
+updates:
+  - package-ecosystem: "maven"
+    directory: "/author-persistence"
     schedule:
       interval: "weekly"
-
-update-book-persistence:
-- package-ecosystem: "maven" # See documentation for possible values
-  directory: "/book-persistence" # Location of package manifests
-  schedule:
-    interval: "weekly"
-
-update-book-publisher:
-- package-ecosystem: "maven" # See documentation for possible values
-  directory: "/book-publisher" # Location of package manifests
-  schedule:
-    interval: "weekly"
-
-update-notifications:
-- package-ecosystem: "maven" # See documentation for possible values
-  directory: "/notifications" # Location of package manifests
-  schedule:
-    interval: "weekly"    
-    
+  - package-ecosystem: "maven"
+    directory: "/book-persistence"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "maven"
+    directory: "/book-publisher"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "maven"
+    directory: "/notifications"
+    schedule:
+      interval: "weekly"    
